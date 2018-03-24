@@ -1,3 +1,4 @@
+#!/bin/bash
 apt-get update
 apt-get install -y build-essential nano libevent-dev libssl-dev
 wget --no-check-certificate http://3proxy.ru/0.8.11/3proxy-0.8.11.tgz
@@ -18,7 +19,9 @@ chmod 600 /etc/3proxy/3proxy.cfg
 wget --no-check-certificate https://github.com/MaxUNof/3proxy/raw/master/.users
 chmod 600 /etc/3proxy/.users
 echo -e "\e[31mStart: /etc/3proxy/3proxy /etc/3proxy/3proxy.cfg \nStop: /usr/bin/killall 3proxy\nReload: /usr/bin/killall -s USR1 3proxy\nThis info saved into ~/3proxy.txt\e[0m"
-echo 'Start: /etc/3proxy/3proxy /etc/3proxy/3proxy.cfg \nStop: /usr/bin/killall 3proxy\nReload: /usr/bin/killall -s USR1 3proxy' >> ~/3proxy.txt
+echo 'Start: /etc/3proxy/3proxy /etc/3proxy/3proxy.cfg' >> ~/3proxy.txt
+echo 'Stop: /usr/bin/killall 3proxy' >> ~/3proxy.txt
+echo 'Reload: /usr/bin/killall -s USR1 3proxy' >> ~/3proxy.txt
 echo '/etc/3proxy/3proxy /etc/3proxy/3proxy.cfg' >> ~/3proxystart.sh
 echo -e "\e[32mCreated ~/3proxystart.sh\e[0m"
 echo '/usr/bin/killall 3proxy' >> ~/3proxystop.sh
