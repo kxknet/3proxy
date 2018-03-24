@@ -1,8 +1,11 @@
 apt-get update
 apt-get install -y build-essential nano libevent-dev libssl-dev
-wget --no-check-certificate https://github.com/MaxUNof/3proxy/blob/master/3proxy-0.8.11.tar.gz
+wget --no-check-certificate hhttp://3proxy.ru/0.8.11/3proxy-0.8.11.tgz
 tar xzf 3proxy-0.8.11.tar.gz
 cd 3proxy-0.8.11
+cd src
+nano proxy.h
+cd -
 make -f Makefile.Linux
 cd src
 mkdir /etc/3proxy/
