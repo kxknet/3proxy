@@ -18,12 +18,19 @@ wget --no-check-certificate https://github.com/MaxUNof/3proxy/raw/master/3proxy.
 chmod 600 /etc/3proxy/3proxy.cfg
 wget --no-check-certificate https://github.com/MaxUNof/3proxy/raw/master/.users
 chmod 600 /etc/3proxy/.users
-cd /etc/init.d/
-wget --no-check-certificate https://raw.githubusercontent.com/MaxUNof/3proxy/master/3proxyinit
-chmod  +x /etc/init.d/3proxyinit
-update-rc.d 3proxyinit defaults
-echo -e "\e[31mUse: /etc/init.d/3proxyinit [START|STOP|RELOAD]\e[0m"
-echo -e "\e[32mInstalled successufelly!\e[0m"
+echo -e "\e[31mStart: /etc/3proxy/3proxy /etc/3proxy/3proxy.cfg \nStop: /usr/bin/killall 3proxy\nReload: /usr/bin/killall -s USR1 3proxy\nThis info saved into ~/3proxy.txt\e[0m"
+echo 'Start: /etc/3proxy/3proxy /etc/3proxy/3proxy.cfg' >> ~/3proxy.txt
+echo 'Stop: /usr/bin/killall 3proxy' >> ~/3proxy.txt
+echo 'Reload: /usr/bin/killall -s USR1 3proxy' >> ~/3proxy.txt
+echo '/etc/3proxy/3proxy /etc/3proxy/3proxy.cfg' >> ~/3proxystart.sh
+chmod +x ~/3proxystart.sh
+echo -e "\e[32mCreated ~/3proxystart.sh\e[0m"
+echo '/usr/bin/killall 3proxy' >> ~/3proxystop.sh
+chmod +x ~/3proxystop.sh
+echo -e "\e[32mCreated ~/3proxystop.sh\e[0m"
+echo '/usr/bin/killall -s USR1 3proxy' >> ~/3proxyreload.sh
+chmod +x ~/3proxyreload.sh
+echo -e "\e[32mCreated ~/3proxyreload.sh\e[0m"
 echo 'nano /etc/3proxy/.users' >> ~/3proxyusers.sh
 chmod +x ~/3proxyusers.sh
 echo -e "\e[32mCreated ~/3proxyusers.sh\e[0m"
