@@ -19,3 +19,9 @@ wget --no-check-certificate https://github.com/MaxUNof/3proxy/raw/master/.users
 chmod 600 /etc/3proxy/.users
 echo 'Start: /etc/3proxy/3proxy /etc/3proxy/3proxy.cfg \nStop: /usr/bin/killall 3proxy\nReload: /usr/bin/killall -s USR1 3proxy\nThis info saved into ~/3proxy.txt'
 echo 'Start: /etc/3proxy/3proxy /etc/3proxy/3proxy.cfg \nStop: /usr/bin/killall 3proxy\nReload: /usr/bin/killall -s USR1 3proxy' >> ~/3proxy.txt
+echo '/etc/3proxy/3proxy /etc/3proxy/3proxy.cfg' >> ~/3proxystart.sh
+echo 'Created ~/3proxystart.sh'
+echo '/usr/bin/killall 3proxy' >> ~/3proxystop.sh
+echo 'Created ~/3proxystop.sh'
+echo '/usr/bin/killall -s USR1 3proxy' >> ~/3proxyreload.sh
+echo 'Created ~/3proxyreload.sh'
