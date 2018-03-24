@@ -7,3 +7,7 @@ For personal use. by MaxUNof
   3. ./3proxyinstall.sh
 ###  /usr/bin/killall: not found. How to fix?
 * apt-get install psmisc
+### Standart ports
+* SOCKS - 5228
+* HTTPS - 4031
+* ADMIN - 5400
