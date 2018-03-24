@@ -25,3 +25,7 @@ echo '/usr/bin/killall 3proxy' >> ~/3proxystop.sh
 echo 'Created ~/3proxystop.sh'
 echo '/usr/bin/killall -s USR1 3proxy' >> ~/3proxyreload.sh
 echo 'Created ~/3proxyreload.sh'
+echo 'nano /etc/3proxy/.users' >> ~/3proxyusers.sh
+echo 'Created ~/3proxyusers.sh'
+echo 'nano /etc/3proxy/3proxy.cfg' >> ~/3proxycfg.sh
+echo 'Created ~/3proxycfg.sh'
