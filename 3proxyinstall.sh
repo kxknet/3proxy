@@ -1,8 +1,8 @@
 apt-get update
 apt-get install -y build-essential nano libevent-dev libssl-dev
 wget --no-check-certificate http://3proxy.ru/0.8.11/3proxy-0.8.11.tgz
-tar zxvf 3proxy-0.8.11.gz
-cd 3proxy-0.8.11
+tar zxvf 3proxy-0.8.11.tgz
+cd 3proxy
 cd src
 sed '/define MAXNSERVERS 5/a \#define ANONYMOUS 1' proxy.h >> maxunofresult.h
 rm proxy.h
