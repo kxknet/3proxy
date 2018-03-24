@@ -17,15 +17,15 @@ wget --no-check-certificate https://github.com/MaxUNof/3proxy/raw/master/3proxy.
 chmod 600 /etc/3proxy/3proxy.cfg
 wget --no-check-certificate https://github.com/MaxUNof/3proxy/raw/master/.users
 chmod 600 /etc/3proxy/.users
-echo 'Start: /etc/3proxy/3proxy /etc/3proxy/3proxy.cfg \nStop: /usr/bin/killall 3proxy\nReload: /usr/bin/killall -s USR1 3proxy\nThis info saved into ~/3proxy.txt'
+echo -e "\e[31mStart: /etc/3proxy/3proxy /etc/3proxy/3proxy.cfg \nStop: /usr/bin/killall 3proxy\nReload: /usr/bin/killall -s USR1 3proxy\nThis info saved into ~/3proxy.txt\e[0m"
 echo 'Start: /etc/3proxy/3proxy /etc/3proxy/3proxy.cfg \nStop: /usr/bin/killall 3proxy\nReload: /usr/bin/killall -s USR1 3proxy' >> ~/3proxy.txt
 echo '/etc/3proxy/3proxy /etc/3proxy/3proxy.cfg' >> ~/3proxystart.sh
-echo 'Created ~/3proxystart.sh'
+echo -e "\e[32mCreated ~/3proxystart.sh\e[0m"
 echo '/usr/bin/killall 3proxy' >> ~/3proxystop.sh
-echo 'Created ~/3proxystop.sh'
+echo -e "\e[32mCreated ~/3proxystop.sh\e[0m"
 echo '/usr/bin/killall -s USR1 3proxy' >> ~/3proxyreload.sh
-echo 'Created ~/3proxyreload.sh'
+echo -e "\e[32mCreated ~/3proxyreload.sh\e[0m"
 echo 'nano /etc/3proxy/.users' >> ~/3proxyusers.sh
-echo 'Created ~/3proxyusers.sh'
+echo -e "\e[32mCreated ~/3proxyusers.sh\e[0m"
 echo 'nano /etc/3proxy/3proxy.cfg' >> ~/3proxycfg.sh
-echo 'Created ~/3proxycfg.sh'
+echo -e "\e[32mCreated ~/3proxycfg.sh\e[0m"
