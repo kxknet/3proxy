@@ -23,12 +23,17 @@ echo 'Start: /etc/3proxy/3proxy /etc/3proxy/3proxy.cfg' >> ~/3proxy.txt
 echo 'Stop: /usr/bin/killall 3proxy' >> ~/3proxy.txt
 echo 'Reload: /usr/bin/killall -s USR1 3proxy' >> ~/3proxy.txt
 echo '/etc/3proxy/3proxy /etc/3proxy/3proxy.cfg' >> ~/3proxystart.sh
+chmod +x ~/3proxystart.sh
 echo -e "\e[32mCreated ~/3proxystart.sh\e[0m"
 echo '/usr/bin/killall 3proxy' >> ~/3proxystop.sh
+chmod +x ~/3proxystop.sh
 echo -e "\e[32mCreated ~/3proxystop.sh\e[0m"
 echo '/usr/bin/killall -s USR1 3proxy' >> ~/3proxyreload.sh
+chmod +x ~/3proxyreload.sh
 echo -e "\e[32mCreated ~/3proxyreload.sh\e[0m"
 echo 'nano /etc/3proxy/.users' >> ~/3proxyusers.sh
+chmod +x ~/3proxyusers.sh
 echo -e "\e[32mCreated ~/3proxyusers.sh\e[0m"
 echo 'nano /etc/3proxy/3proxy.cfg' >> ~/3proxycfg.sh
+chmod +x ~/3proxycfg.sh
 echo -e "\e[32mCreated ~/3proxycfg.sh\e[0m"
