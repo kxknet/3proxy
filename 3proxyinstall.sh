@@ -17,7 +17,4 @@ wget --no-check-certificate https://github.com/MaxUNof/3proxy/raw/master/3proxy.
 chmod 600 /etc/3proxy/3proxy.cfg
 wget --no-check-certificate https://github.com/MaxUNof/3proxy/raw/master/.users
 chmod 600 /etc/3proxy/.users
-cd /etc/init.d/
-wget --no-check-certificate https://raw.github.com/MaxUNof/3proxy/master/3proxyinit
-chmod  +x /etc/init.d/3proxyinit
-update-rc.d 3proxyinit defaults
+echo 'Start: /etc/3proxy/3proxy /etc/3proxy/3proxy.cfg \nStop: /usr/bin/killall 3proxy\n Reload: /usr/bin/killall -s USR1 3proxy'
